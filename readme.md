@@ -120,7 +120,7 @@ tmpfs   /tmp         tmpfs   nodev,nosuid,size=4G          0  0
 
 
 ##optional packages
-##guake,powerline-fonts-git(AUR),zsh,oh-my-zsh-git(AUR),ibus,ibus-unicode,ibus-anthy,gedit,vim,firefox,chromium
+guake,powerline-fonts-git(AUR),zsh,oh-my-zsh-git(AUR),ibus,ibus-unicode,ibus-anthy,gedit,vim,firefox,chromium
 
 
 ##make ibus work with skype
