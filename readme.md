@@ -71,10 +71,10 @@ pacstrap -i /mnt dialog wpa_supplicant
 
 ##Reboot and login
 wifi-menu 
-##or
-##systemctl enable dhcpcd
-##systemctl start dhcpcd
-##check connect to the internet by ping -c 2 google.com
+
+systemctl enable dhcpcd
+systemctl start dhcpcd
+check connect to the internet by ping -c 2 google.com
 
 
 ##Add new user
