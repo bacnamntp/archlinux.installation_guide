@@ -23,3 +23,11 @@ Installation
 - For best results make sure your $TERM env variable is 256 colours; export TERM=xterm-256color
 
 - Note: to have the correct font in the bottom bar you need a Powerline font installed and selected in the terminal.
+
+- Color scheme: kolor
+
+- You can download vundle-air-themes for vim. Copy themes to the vim-airline/autoload/airline/themes folder.
+
+
+
+
