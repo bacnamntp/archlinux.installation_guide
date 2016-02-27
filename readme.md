@@ -120,7 +120,7 @@ tmpfs   /tmp         tmpfs   nodev,nosuid,size=4G          0  0
 
 
 ##optional packages
-guake,powerline-fonts-git(AUR),zsh,oh-my-zsh-git(AUR),ibus,ibus-unicode,ibus-anthy,gedit,vim,firefox,chromium,gvim,fluxbox
+guake,powerline-fonts-git(AUR),zsh,oh-my-zsh-git(AUR),ibus,ibus-unicode,ibus-anthy,gedit,vim,firefox,chromium,gvim,fluxbox,qutebrowser,
 
 ##if install fluxbox then the .xinitrc file should have this line
 exec startfluxbox
