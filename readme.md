@@ -1,35 +1,35 @@
 ########################################################
 ##
-##	HOW TO INSTALL ARCH LINUX
+##  HOW TO INSTALL ARCH LINUX
 ########################################################
 
 ########################################################
-##	PARTITIONING THE HARD DRIVE
-##	
+##  PARTITIONING THE HARD DRIVE
+##
 ########################################################
 
 fdisk -l
 cfdisk /dev/sda
-##	create swap and linux partition. Both are primary partition.
-##	swap should have at least a haft of ram.
-##	when done, (may be need to add bootable flag to linux partition), go to Type,
-##	chose linux and linux swap type for the corresponding parttion. After that, hit write.
+##  create swap and linux partition. Both are primary partition.
+##  swap should have at least a haft of ram.
+##  when done, (may be need to add bootable flag to linux partition), go to Type,
+##  chose linux and linux swap type for the corresponding parttion. After that, hit write.
 mkfs.ext4 /dev/sda2
 mount /dev/sda2 /mnt
 mkswap /dev/sda1
 swapon /dev/sda1
 
 ########################################################
-##	INSTALLING THE SYSTEM
-##	
+##  INSTALLING THE SYSTEM
+##
 ########################################################
 
 wifi-menu -> to connect wifi internet.
 pacstrap /mnt base base-devel
 
 ########################################################
-##	CONFIGURING THE INSTALLATION
-##	
+##  CONFIGURING THE INSTALLATION
+##
 ########################################################
 arch-chroot /mnt
 passwd  -> change the root password
@@ -59,8 +59,8 @@ umount /mnt
 reboot
 
 ########################################################
-##	CONFIGURING MY OWN SYSTEM
-##	
+##  CONFIGURING MY OWN SYSTEM
+##
 ########################################################
 
 ##First we need to install packages to use wifi-menu
@@ -70,7 +70,7 @@ pacstrap -i /mnt dialog wpa_supplicant
 
 
 ##Reboot and login
-wifi-menu 
+wifi-menu
 
 systemctl enable dhcpcd
 systemctl start dhcpcd
@@ -114,8 +114,8 @@ pacman -Sy yaourt
 ##mount ntfs partition with ntfs-3g package and extend tmpfs's size to 4GB to use yaourt not face error.
 pacman -S ntfs-3g
 ##add these lines to /etc/fstab
-/dev/sda2		/media/MY.DATA	ntfs-3g		defaults,umask=077,uid=1000	0 0
-tmpfs   /tmp         tmpfs   nodev,nosuid,size=4G          0  0 
+/dev/sda2   /media/MY.DATA  ntfs-3g   defaults,umask=077,uid=1000 0 0
+tmpfs   /tmp         tmpfs   nodev,nosuid,size=4G          0  0
 
 
 
@@ -143,6 +143,6 @@ vboxnetadp
 vboxnetflt
 vboxpci
 ##then add current user to vboxusers group
-gpasswd -a bacnamntp vboxusers 
+gpasswd -a bacnamntp vboxusers
 ##if install arch on virtual box then install xf86-video-vesa package on virtual box arch.
 
