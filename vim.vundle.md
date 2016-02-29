@@ -24,9 +24,9 @@ Installation
 
 - Note: to have the correct font in the bottom bar you need a Powerline font installed and selected in the terminal.
 
-- Color scheme: kolor
+- Color scheme: monokai
 
-- You can download vundle-air-themes for vim. Copy themes to the vim-airline/autoload/airline/themes folder.
+- Plugin for color schemes: flazz/vim-colorschemes
 
 
 
