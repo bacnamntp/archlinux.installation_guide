@@ -17,6 +17,7 @@ Bundle 'terryma/vim-multiple-cursors'
 " Plugins for web developer
 Bundle 'tpope/vim-surround'
 Bundle 'rstacruz/sparkup'
+Bundle 'scrooloose/nerdtree'
 
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
