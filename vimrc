@@ -18,11 +18,13 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-surround'
 Bundle 'rstacruz/sparkup'
 Bundle 'scrooloose/nerdtree'
+Bundle 'junegunn/vim-easy-align'
 
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
+
 
 " Color Themes
 Bundle 'flazz/vim-colorschemes'
@@ -79,9 +81,9 @@ set smartcase
 "map Q gq
 
 " In many terminal emulators the mouse works just fine, thus enable it.
-"if has('mouse')
-"  set mouse=a
-"endif
+if has('mouse')
+  set mouse=a
+endif
 
 " do not history when leavy buffer
 set hidden
@@ -117,6 +119,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
+" vim-easy-align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 "
 " Basic shortcuts definitions
 "  most in visual mode / selection (v or ⇧ v)
