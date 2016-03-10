@@ -147,5 +147,4 @@ gpasswd -a bacnamntp vboxusers
 ##if install arch on virtual box then install xf86-video-vesa package on virtual box arch.
 
 ##guake tweak
-background colors like mac are : #222B36 #464446 #212A32 
-                                  #1B1D1E #272822
+background colors : #1B1D1E #272822 #262626
