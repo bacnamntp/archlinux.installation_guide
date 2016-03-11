@@ -19,6 +19,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'rstacruz/sparkup'
 Bundle 'scrooloose/nerdtree'
 Bundle 'junegunn/vim-easy-align'
+Bundle 'Chiel92/vim-autoformat'
 
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
