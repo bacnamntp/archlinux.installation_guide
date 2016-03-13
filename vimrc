@@ -120,3 +120,6 @@ map <C-a> :NERDTreeToggle<CR>
 
 " Taglist
 map <C-l> :TlistToggle<CR>
+
+" Lusty
+map <C-x> :LustyBufferGrep<CR>
