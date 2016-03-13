@@ -1,6 +1,4 @@
-" vim-sublime - A minimal Sublime Text -like vim experience bundle
-"               http://github.com/grigio/vim-sublime
-" Best view with a 256 color terminal and Powerline fonts
+" My vimrc file
 
 set nocompatible
 filetype off
@@ -20,6 +18,7 @@ Bundle 'rstacruz/sparkup'
 Bundle 'scrooloose/nerdtree'
 Bundle 'junegunn/vim-easy-align'
 Bundle 'Chiel92/vim-autoformat'
+Bundle 'vim-scripts/taglist.vim'
 
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -108,3 +107,9 @@ let g:airline_theme='dark'
 " vim-easy-align
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+" NerdTree
+map <C-a> :NERDTreeToggle<CR>
+
+" Taglist
+map <C-l> :TlistToggle<CR>

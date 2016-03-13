@@ -28,6 +28,8 @@ Installation
 
 - Plugin for color schemes: flazz/vim-colorschemes
 
+- If use taglist plugin -> need to install ctags on Archlinux
+
 
 
 
