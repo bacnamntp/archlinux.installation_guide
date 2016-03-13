@@ -21,10 +21,9 @@ Bundle 'Chiel92/vim-autoformat'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'sjbach/lusty'
-
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
+Bundle 'tobyS/pdv'
+Bundle 'tobyS/vmustache'
+Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 
 
@@ -123,3 +122,13 @@ map <C-l> :TlistToggle<CR>
 
 " Lusty
 map <C-x> :LustyBufferGrep<CR>
+
+" pdv
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+"nnoremap <C-p> :call pdv#DocumentCurrentLine()<CR>
+nnoremap <C-c> :call pdv#DocumentWithSnip()<CR>
+
+" ultisnips
+let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
