@@ -30,6 +30,8 @@ Installation
 
 - If use taglist plugin -> need to install ctags on Archlinux
 
+- If use ack plugin -> need to install ack on Archlinux
+
 
 
 

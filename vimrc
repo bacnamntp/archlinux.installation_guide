@@ -19,6 +19,8 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'junegunn/vim-easy-align'
 Bundle 'Chiel92/vim-autoformat'
 Bundle 'vim-scripts/taglist.vim'
+Bundle 'mileszs/ack.vim'
+Bundle 'sjbach/lusty'
 
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -28,8 +30,13 @@ Bundle 'honza/vim-snippets'
 
 " Color Themes
 Bundle 'flazz/vim-colorschemes'
-colorscheme Monokai
+Bundle 'altercation/vim-colors-solarized'
+"colorscheme Monokai
 
+colorscheme solarized
+let g:solarized_termcolors=256
+set background=dark
+set t_Co=256
 """"""""
 if has('autocmd')
   filetype plugin indent on
