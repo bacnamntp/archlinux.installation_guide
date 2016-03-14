@@ -35,7 +35,7 @@ Bundle 'altercation/vim-colors-solarized'
 colorscheme solarized
 let g:solarized_termcolors=256
 set background=dark
-set t_Co=256
+set t_Co=16
 """"""""
 if has('autocmd')
   filetype plugin indent on
@@ -130,5 +130,5 @@ nnoremap <C-c> :call pdv#DocumentWithSnip()<CR>
 
 " ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
-"let g:UltiSnipsJumpForwardTrigger="<c-b>"
-"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<tab>"
