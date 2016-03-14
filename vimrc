@@ -130,5 +130,5 @@ nnoremap <C-c> :call pdv#DocumentWithSnip()<CR>
 
 " ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<S-n>"
+let g:UltiSnipsJumpBackwardTrigger="<S-p>"
