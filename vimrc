@@ -92,6 +92,17 @@ set fileformats=unix,dos,mac
 
 set completeopt=menuone,longest,preview
 
+"make Alt key working
+
+let c='a'
+while c <= 'z'
+exec "set <A-".c.">=\e".c
+exec "imap \e".c." <A-".c.">"
+  let c = nr2char(1+char2nr(c))
+endw
+
+set timeout ttimeoutlen=50
+
 "
 " Plugins config
 "
@@ -118,10 +129,10 @@ nmap ga <Plug>(EasyAlign)
 map <C-a> :NERDTreeToggle<CR>
 
 " Taglist
-map <C-l> :TlistToggle<CR>
+map <M-t> :TlistToggle<CR>
 
 " Lusty
-map <C-x> :LustyBufferGrep<CR>
+map <M-l> :LustyBufferGrep<CR>
 
 " pdv
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
@@ -130,5 +141,5 @@ nnoremap <C-c> :call pdv#DocumentWithSnip()<CR>
 
 " ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<S-n>"
-let g:UltiSnipsJumpBackwardTrigger="<S-p>"
+let g:UltiSnipsJumpForwardTrigger="<M-n>"
+let g:UltiSnipsJumpBackwardTrigger="<M-p>"
