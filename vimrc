@@ -25,8 +25,9 @@ Bundle 'tobyS/pdv'
 Bundle 'tobyS/vmustache'
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
-Bundle 'craigemery/vim-autotag'
 Bundle 'arnaud-lb/vim-php-namespace'
+Bundle 'xolox/vim-easytags'
+Bundle 'xolox/vim-misc'
 
 
 " Color Themes
@@ -163,3 +164,10 @@ endfunction
 
 autocmd FileType php inoremap <Leader>e <Esc>:call IPhpExpandClass()<CR>
 autocmd FileType php noremap <Leader>e :call PhpExpandClass()<CR>
+
+" vim-easytags
+:set tags=./tags;
+":let g:easytags_dynamic_files = 1
+:let g:easytags_events = ['BufWritePost']
+:let g:easytags_auto_update = 0
+
