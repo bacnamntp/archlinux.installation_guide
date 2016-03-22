@@ -112,11 +112,6 @@ set timeout ttimeoutlen=50
 " CtrlP
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* 
 
-" UltiSnips
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
@@ -134,19 +129,20 @@ map <C-a> :NERDTreeToggle<CR>
 map <M-t> :TlistToggle<CR>
 
 " Lusty
-map <M-l> :LustyBufferGrep<CR>
+map <C-l> :LustyBufferGrep<CR>
+map <M-l> :LustyBufferExplorer<CR>
 
-" pdv
+" Pdv
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 "nnoremap <C-p> :call pdv#DocumentCurrentLine()<CR>
 nnoremap <C-c> :call pdv#DocumentWithSnip()<CR>
 
-" ultisnips
+" Ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<M-n>"
 let g:UltiSnipsJumpBackwardTrigger="<M-p>"
 
-" vim-php-namespace
+" Vim-php-namespace
 function! IPhpInsertUse()
   call PhpInsertUse()
   call feedkeys('a',  'n')
