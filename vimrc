@@ -84,7 +84,7 @@ if has('mouse')
   set mouse=a
 endif
 
-" do not history when leavy buffer
+" Do not history when leavy buffer
 set hidden
 
 set nobackup
@@ -94,7 +94,28 @@ set fileformats=unix,dos,mac
 
 set completeopt=menuone,longest,preview
 
-"make Alt key working
+" Set comma is the leader
+let mapleader = ','
+
+" Make it easy to edit the Vimrc file.
+nmap <Leader>ev :tabedit $MYVIMRC<cr>
+
+" Disable arrow keys
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
+
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+" Open splits
+nmap vs :vsplit<cr>
+nmap sp :split<cr>
+
+" Make Alt key working
 
 let c='a'
 while c <= 'z'
