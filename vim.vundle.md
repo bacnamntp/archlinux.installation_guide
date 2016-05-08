@@ -35,6 +35,6 @@ Installation
 - If use ultisnips plugin -> need to add filetype=off in .vimrc file
   To use snippets with file type -> need to set file type ->Ex  :set ft=php.laravel
 
-
+- Install sublime material hybrid theme for vim if you want.
 
 
