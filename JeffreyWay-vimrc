@@ -1,5 +1,6 @@
 " My vimrc file
 
+filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
@@ -32,8 +33,13 @@ Bundle 'flazz/vim-colorschemes'
 """"""""""""""
 "VIM CONFIG
 """"""""""""""
-filetype plugin indent on
-syntax enable
+if has('autocmd')
+    filetype plugin indent on
+endif
+if has('syntax') && !exists('g:syntax_on')
+    syntax enable
+endif
+
 set shell=/bin/zsh
 set history=1000
 set undolevels=1000
