@@ -97,11 +97,6 @@ set fillchars+=vert:\             " Don't show pipes in vertical splits
 
 highlight Search cterm=underline
 
-" In many terminal emulators the mouse works just fine, thus enable it.
-if has('mouse')
-  set mouse=a
-endif
-
 " Set comma is the leader
 let mapleader = ','
 
