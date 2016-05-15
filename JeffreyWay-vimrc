@@ -29,8 +29,9 @@ Bundle 'arnaud-lb/vim-php-namespace'
 " Color Themes
 Bundle 'flazz/vim-colorschemes'
 
-
-""""""""
+""""""""""""""
+"VIM CONFIG
+""""""""""""""
 filetype plugin indent on
 syntax enable
 set shell=/bin/zsh
@@ -71,9 +72,6 @@ set splitright
 "Show (partial) command in the status line
 set showcmd
 set encoding=utf-8 " Necessary to show Unicode glyphs
-" I don't want to pull up these folders/files when calling CtrlP
-set wildignore+=*/vendor/**
-set wildignore+=*/public/forum/**
 set list                          " Show unprintable characters
 set listchars=tab:▸\              " Char representing a tab
 set listchars+=extends:❯          " Char representing an extending line
@@ -85,7 +83,6 @@ set showbreak=↪                   " Show wraped lines with this char
 set scrolloff=3                   " Min. lines to keep above or below the
 " cursor when scrolling
 set ruler                         " Show current cursor position
-set noshowmode                    " Don't show current mode, let airline
 " handle that
 set scrolljump=5                  " Scroll more than one line
 set wrap                          " Wrap long lines
@@ -135,6 +132,8 @@ set timeout ttimeoutlen=50
 
 " CtrlP
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/node_modules/*
+set wildignore+=*/vendor/**
+set wildignore+=*/public/forum/**
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
